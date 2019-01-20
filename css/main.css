@@ -8,16 +8,16 @@ body {
     font-size: 16px;
     line-height: 32px;
     font-family: /* Ubuntu, sans-serif */;
-    color: White;
+    color: rgb(68, 65, 65);
 }
 
 h1 {
-    font-size: 20rem;
+    font-size: 3rem;
     color: White;
 }
 
 h2 {
-    font-size: 18rem;
+    font-size: 2rem;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
