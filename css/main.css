@@ -12,12 +12,12 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
-    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    color: whitesmoke;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
@@ -30,7 +30,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: #442444;
+    background-color: #5a305a;
     color: whitesmoke;
 }
 
