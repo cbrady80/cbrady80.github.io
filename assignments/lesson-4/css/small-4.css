@@ -1,15 +1,11 @@
-body {
-	background-color: whitesmoke;
-}
-
 header {
 	margin: 10px auto;
 	background-color: #42006b;
 	border: 1px solid #ffc300;
 	box-shadow: 0 0 30px #777;
     text-align: center;
-    color: whitesmoke;
-    font-family: 'Abril Fatface', cursive;
+    color: white;
+    font-family: 'Abril Fatface';
 }
 
 header img, .headings {
@@ -24,10 +20,24 @@ header img, .headings {
 
 nav {
     background-color: #ffd800;
-    color: #000000;
-    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-family: 'Raleway';
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Raleway';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato';
 }
 
 footer {
     font-size: smaller;
+    font-family: 'Lato';
+    background-color: #42006b;
+    color: white;
+    text-align: center;
 }
