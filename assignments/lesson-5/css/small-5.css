@@ -2,6 +2,8 @@ body {
     background-color: white;
     color: black;
     font-family: 'Raleway', sans-serif;
+    width: 100%;
+    min-width: 320px;
 }
 
 /* HEADER */
@@ -20,6 +22,7 @@ header {
 header img {
 	vertical-align: sub;
     margin: 10px;
+    display: inline-block;
 }
 
 .headings {
