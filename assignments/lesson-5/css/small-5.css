@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    color: black;
+    color: #42006b;
     font-family: 'Raleway', sans-serif;
     width: 100%;
     min-width: 320px;
@@ -9,11 +9,7 @@ body {
 /* HEADER */
 header {
 	margin: 10px auto;
-	box-shadow: 0 0 30px #777;
     text-align: center;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 40px;
-    
 }
 
 header img {
@@ -28,20 +24,37 @@ header img {
 }
 
 header h1 {
-    color: #42006b;
+    color: #d6620a;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .motto {
-    color: whitesmoke;
+    color: #42006b;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 1em;
+    margin-bottom: 10px;
 }
 
 /* NAVIGATION */
 nav {
-    background-color: #42006b;
+    background-color: #d6620a;
     color: white;
     font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d6620a;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #42006b;
 }
 
 
@@ -52,7 +65,7 @@ h2, h3, h4, h5, h6 {
 footer {
     font-size: smaller;
     font-family: 'Lato', sans-serif;
-    background-color: #42006b;
+    background-color: #d6620a;
     color: white;
     text-align: center;
 }

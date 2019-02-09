@@ -1,0 +1,26 @@
+@media only screen and (min-width: 320px) {
+    /* HEADER */
+    header h1 {
+        font-size: 3em;
+    }
+    
+    .motto {
+        font-size: 1em;
+    }
+
+    header img {
+        max-width: 100px;
+    }
+
+    /* NAVIGATION */
+     nav ul li {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+        border: none;
+        padding: .6rem 1rem;
+    }
+
+}
