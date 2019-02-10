@@ -23,4 +23,19 @@
         padding: .6rem 1rem;
     }
 
+    /* MAIN */
+    
+    main {
+        max-width:1024px;
+        margin:0 auto;
+    }
+
+    .hero {
+        width: 1000px;
+        height: 800px;
+        margin: 10px auto;
+        position: relative;
+    }
+}
+
 }
