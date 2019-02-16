@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Gem State Weather</title>
+        <meta name="description" content="Idaho - The Gem State - Weather">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-5.css">
+        <link rel="stylesheet" href="css/large-5.css">
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7cLato%7cRaleway" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <header>
+            <img src="images/iconfinder_weather-clear_118959.png" alt="Sun">
+            <section class="headings">
+                <h1>Gem State Weather</h1>
+                <div class="motto">Idaho's best source for current weather info!</div>
+            </section>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>PRESTON</h2>
+
+            <section class="hero">
+                <picture>
+                    <source srcset="images/franklin_400.jpeg" media="(min-width:500px) and (max-width: 799px)">
+                        <source srcset="images/franklin_800.jpeg" media="(min-width:=800px)">
+                    <img src="images/franklin_200.jpeg" alt="Preston">
+                </picture>
+                
+                <div id="summary">
+                    <h3>Weather Summary</h3>
+                    <p>Currently: <span id="currently">30</span></p>
+                    <p>High: <span id="high">32</span></p>
+                    <p>Wind Chill: <span id="windchill">25</span></p>
+                    <p>Humidity: <span id="humidity">20%</span></p>
+                    <p>Wind Speed: <span id="windspeed">5 mph</span></p>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>5 Day Forecast</h3>
+                <p>
+                    This is a test!
+                </p>
+            </section>
+            
+            <article>
+                <h3>Article</h3>
+            </article>
+        </main>
+
+        <footer>
+            <p>Contact | Map</p>
+            <p>&copy;2019 | Cheryl Brady | <a href="#"> Terms of Use</a> | Current Date</p>
+        </footer>
+        
+    </body>
+</html>
