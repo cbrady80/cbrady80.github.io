@@ -15,11 +15,7 @@
     }
 
     /*------ NAVIGATION -------*/
-    nav button {display: none;} 
-    
-    nav ul li {
-        display: inline-block;
-    }
+    nav button {display: none;}
     
     nav ul {
         text-align: center;

@@ -25,7 +25,7 @@
     <!-- NAVIGATION -->
         <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776;</button>
-            <ul>
+            <ul id="primaryNav">
                 <li><a href="#" class="current">Home</a></li>
                 <li class="active"><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
@@ -104,9 +104,26 @@
 
     <!-- FOOTER -->    
         <footer>
-            <p>Contact | Map</p>
-            <p>&copy;2019 | Cheryl Brady | <a href="#"> Terms of Use</a> | Current Date</p>
+            <aside>
+                <div class="contact">
+                    <p><b>Gem State Weather</b></p>
+                    <p><i class="material-icons">location_on</i> 789 Center Street <br> Preston, ID 54321</p>
+                    <p><i class="material-icons">phone_iphone</i> 111-222-3456</p>
+                    <p><i class="material-icons">mail_outline</i> gemstate@weather.com</p>
+                    <img class="social-icons" src="###" alt="Facebook Icon">
+                    <img class="social-icons" src="###" alt="Pinterest Icon">
+                    <img class="social-icons" src="###" alt="Twitter Icon">
+                    <img class="social-icons" src="###" alt="Google Icon">
+                </div>
+                <div id="googleMap"></div><br>
+            </aside>
+            <p class="footer-bar">&copy;2019 | Cheryl Brady | <a href="#"> Terms of Use</a> | <span id="currentdate"></p>
         </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/maps.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZAm-95tyd8OuAKBcVTTSXE147XAODL4A&callback=myMap"></script> 
         
     </body>
 </html>
