@@ -3,29 +3,31 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Gem State Weather</title>
+        <title>Preston | Gem State Weather</title>
         <meta name="description" content="Idaho - The Gem State - Weather">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/small-5.css">
-        <link rel="stylesheet" href="css/large-5.css">
+        <link rel="stylesheet" href="css/small-6.css">
+        <link rel="stylesheet" href="css/large-6.css">
         <!-- Google API font reference -->
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7cLato%7cRaleway" rel="stylesheet">
     </head>
 
     <body>
-        
+    <!-- HEADER -->    
         <header>
-            <img src="images/iconfinder_weather-clear_118959.png" alt="Sun">
+            <img src="images/weather_logo.png" alt="Weather Logo">
             <section class="headings">
                 <h1>Gem State Weather</h1>
                 <div class="motto">Idaho's best source for current weather info!</div>
             </section>
         </header>
 
-        <nav>
+    <!-- NAVIGATION -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
             <ul>
                 <li><a href="#" class="current">Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li class="active"><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -33,38 +35,74 @@
             </ul>
         </nav>
 
-        <main>
-            <h2>PRESTON</h2>
+    <!-- CONTENT -->    
+        <main class="clearfix">
+            <h2>Preston City, Idaho</h2>
 
             <section class="hero">
-                <picture>
-                    <source srcset="images/franklin_400.jpeg" media="(min-width:500px) and (max-width: 799px)">
-                        <source srcset="images/franklin_800.jpeg" media="(min-width:=800px)">
-                    <img src="images/franklin_200.jpeg" alt="Preston">
-                </picture>
+                    <picture>        
+                        <source media="(min-width: 400px) and (max-width: 799px)" srcset="images/franklin_400.jpeg">
+                        <source media="(min-width: 800px)" srcset="images/franklin_800.jpeg">
+                    <img src="images/franklin_250.jpeg" alt="Preston">
+                    </picture>
                 
                 <div id="summary">
                     <h3>Weather Summary</h3>
-                    <p>Currently: <span id="currently">30</span></p>
-                    <p>High: <span id="high">32</span></p>
-                    <p>Wind Chill: <span id="windchill">25</span></p>
-                    <p>Humidity: <span id="humidity">20%</span></p>
-                    <p>Wind Speed: <span id="windspeed">5 mph</span></p>
+                    <p>Currently: <span id="currently">24&#8457</span></p>
+                    <p>High: <span id="high">32&#8457</span></p>
+                    <p>Wind Chill: <span id="windchill">22&#8457</span></p>
+                    <p>Humidity: <span id="humidity">80%</span></p>
+                    <p>Wind Speed: <span id="windspeed">6 mph</span></p>
                 </div>
             </section>
 
             <section class="forecast">
-                <h3>5 Day Forecast</h3>
-                <p>
-                    This is a test!
-                </p>
+                <h2>5 Day Forecast</h2>
+
+                <table style="width:70%">
+                    <tr>
+                      <th>Monday</th>
+                      <th>Tuesday</th> 
+                      <th>Wednesday</th>
+                      <th>Thursday</th>
+                      <th>Friday</th>
+                    </tr>
+                    <tr>
+                      <td><img src="images/sunny.png" alt="Sunny" style="width:100%">36&#8457</td>
+                      <td><img src="images/snow.png" alt="Snow" style="width:100%">25&#8457</td> 
+                      <td><img src="images/rain.png" alt="Rain" style="width:100%">33&#8457</td>
+                      <td><img src="images/partly_cloudy.png" alt="Partly Cloudy" style="width:100%">39&#8457</td>
+                      <td><img src="images/thunder_storms.png" alt="Thunder Storms" style="width:100%">35&#8457</td>
+                    </tr>
+                  </table>
+            
             </section>
             
             <article>
-                <h3>Article</h3>
+                <h2>Preston Recreation</h2>
+                <h5><i>By: Southeast Idaho High Country Tourism</i></h5>
+                <figure class="picture">
+                    <img src="images/Optimized-idaho-lake-275.jpg" alt="Beautiful Lake in Idaho">
+                </figure>
+                    
+                </div> 
+                <p>Awaiting the fishermen and water-skiers who come from miles around are nine reservoirs. Peaceful 
+                    campgrounds and refreshing hikes are within an easy distance. Snowmobiling is a favorite sport in 
+                    the Bear River Range of the Wasatch Mountains and the Wellsville and Malad Ranges surrounding our 
+                    town. The local hunting opportunities include: deer, elk, moose, pheasant, duck, geese and mountain 
+                    lion. Hunting and fishing regulations and licenses are available at many of our stores.</p>
+
+                <p>Whether you are site-seeing or hunting the wildlife is abundant. Occasionally wildlife can be seen 
+                    in our backyards and fields, but mostly in the beautiful mountains and near the many waterways. 
+                    Historic sites and scenic views can also be navigated on the Pioneer Historic Byway that passes 
+                    through Preston on Highway 91.</p>
+                    
+                <p>We hope that you will get off I-15 and come visit our beautiful hometown of Preston.</p>
+                <p>Credit: <a href="https://idahohighcountry.org/preston/">idahohighcountry.org</a></p>
             </article>
         </main>
 
+    <!-- FOOTER -->    
         <footer>
             <p>Contact | Map</p>
             <p>&copy;2019 | Cheryl Brady | <a href="#"> Terms of Use</a> | Current Date</p>

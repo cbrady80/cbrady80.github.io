@@ -15,11 +15,16 @@
     }
 
     /*------ NAVIGATION -------*/
-     nav ul li {
+    nav button {display: none;} 
+    
+    nav ul li {
         display: inline-block;
     }
     
-    ul {
+    nav ul {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
         flex-direction: row;
     }
 
@@ -36,6 +41,15 @@
         margin:0 auto;
     }
 
+    /*------ HERO ------*/
+    .hero {
+        width: 1000px;
+        height: 500px;
+        margin: 10px auto;
+        position: relative;
+    }
+
+    /*------- WEATHER SUMMARY ------*/
     div#summary {
         top: 50px;
         right: 50px;
@@ -46,14 +60,38 @@
         font-size: 20px;
     }
 
-    .hero {
-        width: 1000px;
-        height: 500px;
-        margin: 10px auto;
-        position: relative;
-    }
-
+    /*------ FORECAST ------*/
     .forecast {
         display: block;
+        margin: 40px;
+    }
+
+    table {
+        margin: 0 auto;
+    }
+
+    th {
+        background-color: #42006b;
+        color: white;
+    }
+
+    table, th, td {
+        border: 1px solid #42006b;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /*------ ARTICLE ------*/
+   
+    .picture {
+        width: 50%;
+        margin: 0;
+        float: right;
+    }
+    
+    .picture img {
+        width: 100%;
+        padding: 2%; 
     }
 }
