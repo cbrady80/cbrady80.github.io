@@ -40,10 +40,9 @@
             <h2>Preston City, Idaho</h2>
 
             <section class="hero">
-                    <picture>        
-                        <source media="(min-width: 400px) and (max-width: 799px)" srcset="images/franklin_400.jpeg">
-                        <source media="(min-width: 800px)" srcset="images/franklin_800.jpeg">
-                    <img src="images/franklin_250.jpeg" alt="Preston">
+                    <picture>            
+                    <img src="images/franklin_250.jpeg" alt="Preston" sizes="100vw" 
+                        srcset="images/franklin_400.jpeg 400w, images/franklin_800.jpeg 900w">
                     </picture>
                 
                 <div id="summary">
@@ -122,7 +121,7 @@
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/maps.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZAm-95tyd8OuAKBcVTTSXE147XAODL4A&callback=myMap"></script> 
-        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZAm-95tyd8OuAKBcVTTSXE147XAODL4A&callback=prestonMap"></script>
+ 
     </body>
 </html>

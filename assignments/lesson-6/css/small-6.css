@@ -52,6 +52,7 @@ nav {
     width: 100%;
     background-color: #d6620a;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 
 nav button {
@@ -67,6 +68,11 @@ nav ul {
     margin: 0;
     padding: 0;
     text-align: center;
+    display: block;
+}
+
+nav ul.hide {
+    display: none;
 }
 
 /*Remove default link underline and color*/
@@ -100,14 +106,13 @@ h2 {
 
 /*------ HERO ------*/
 .hero {
-    height: 375px;
-    margin: 10px auto;
+    margin: 10px auto 100px auto;
     position: relative;
 }
 
 .hero img {
-    width: 100%;
-    margin: 0;
+    max-width: 100%;
+    margin: auto;
     display: block;
 }
 
