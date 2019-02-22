@@ -1,0 +1,97 @@
+@media only screen and (min-width: 45em) {
+    /*------ HEADER ------*/
+    header h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+    
+    .motto {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    header img {
+        max-width: 100px;
+    }
+
+    /*------ NAVIGATION -------*/
+    nav button {display: none;}
+    
+    nav ul {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+        border: none;
+        padding: .6rem 1rem;
+    }
+
+    nav ul.hide {
+        display: inline-flex;
+        margin: auto;
+    }
+
+    /*------ MAIN ------*/
+    
+    main {
+        max-width:1024px;
+        margin:0 auto;
+    }
+
+    /*------ HERO ------*/
+    .hero {
+        max-width: 1000px;
+        margin: 10px auto;
+        position: relative;
+    }
+
+    /*------- WEATHER SUMMARY ------*/
+    div#summary {
+        top: 50px;
+        right: 50px;
+        padding: 35px 50px;
+    }
+
+    div#summary p {
+        font-size: 20px;
+    }
+
+    /*------ FORECAST ------*/
+    .forecast {
+        display: block;
+        margin: 40px;
+    }
+
+    table {
+        margin: 0 auto;
+    }
+
+    th {
+        background-color: #42006b;
+        color: white;
+    }
+
+    table, th, td {
+        border: 1px solid #42006b;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /*------ ARTICLE ------*/
+   
+    .picture {
+        width: 50%;
+        margin: 0;
+        float: right;
+    }
+    
+    .picture img {
+        width: 100%;
+        padding: 2%; 
+    }
+}
