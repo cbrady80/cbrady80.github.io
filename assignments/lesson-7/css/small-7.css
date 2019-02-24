@@ -67,8 +67,8 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul.hide {
@@ -79,7 +79,7 @@ nav ul.hide {
 nav ul li a {
     text-decoration: none;
     color: white;
-    display: block;
+    display: flex;
     margin: 0 auto;
     padding: .8rem 2%;
     border-top: 1px solid rgba(0,0,0,0.4);
@@ -173,6 +173,24 @@ article h5 {
     width: 100%;
 }
 
+/*------ GALLERY ------*/
+
+div.weatherGallery {
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+}
+
+div.weatherGallery figure img {
+    width: 100%;
+}
+
+div.weatherGallery figure figcaption {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2% 1%;
+}
 
 /*------ FOOTER ------*/
 

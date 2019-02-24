@@ -6,8 +6,9 @@
         <title>Preston | Gem State Weather</title>
         <meta name="description" content="Idaho - The Gem State - Weather">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/small-6.css">
-        <link rel="stylesheet" href="css/large-6.css">
+        <link rel="stylesheet" href="css/small-7.css">
+        <link rel="stylesheet" href="css/medium-7.css">
+        <link rel="stylesheet" href="css/large-7.css">
         <!-- Google API font reference -->
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7cLato%7cRaleway" rel="stylesheet">
     </head>
@@ -26,12 +27,12 @@
         <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="primaryNav">
-                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li class="active"><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
 
@@ -47,11 +48,11 @@
                 
                 <div id="summary">
                     <h3>Weather Summary</h3>
-                    <p>Currently: <span id="currently">24&#8457;</span></p>
-                    <p>High: <span id="high">32&#8457;</span></p>
-                    <p>Wind Chill: <span id="windchill">22&#8457;</span></p>
-                    <p>Humidity: <span id="humidity">80%</span></p>
-                    <p>Wind Speed: <span id="windspeed">6 mph</span></p>
+                    <p>Currently: <span id="currentTemp">35</span>&#8457;</p>
+                    <p>High: <span id="high">32</span>&#8457;</p>
+                    <p>Wind Chill: <span id="windChill"></span>&#8457;</p>
+                    <p>Humidity: <span id="humidity"></span>80%</p>
+                    <p>Wind Speed: <span id="windSpeed">15</span>mph</p>
                 </div>
             </section>
 
@@ -105,13 +106,13 @@
             <aside>
                 <div class="contact">
                     <p><b>Gem State Weather</b></p>
-                    <p><i class="material-icons">location_on</i> 789 Center Street <br> Preston, ID 54321</p>
-                    <p><i class="material-icons">phone_iphone</i> 111-222-3456</p>
-                    <p><i class="material-icons">mail_outline</i> gemstate@weather.com</p>
-                    <img class="social-icons" src="###" alt="Facebook Icon">
-                    <img class="social-icons" src="###" alt="Pinterest Icon">
-                    <img class="social-icons" src="###" alt="Twitter Icon">
-                    <img class="social-icons" src="###" alt="Google Icon">
+                    <p><i class="material-icons"></i> 789 Center Street <br> Preston, ID 54321</p>
+                    <p><i class="material-icons"></i> 111-222-3456</p>
+                    <p><i class="material-icons"></i> gemstate@weather.com</p>
+                    <img class="social-icons" src="images/iconfinder-facebook.png" alt="Facebook Icon">
+                    <img class="social-icons" src="images/iconfinder-pinterest.png" alt="Pinterest Icon">
+                    <img class="social-icons" src="images/iconfinder-twitter.png" alt="Twitter Icon">
+                    <img class="social-icons" src="images/iconfinder-google-plus.png" alt="Google Icon">
                 </div>
                 <div id="googleMap"></div><br>
             </aside>
@@ -119,6 +120,7 @@
         </footer>
 
         <script src="scripts/hamburger.js"></script>
+        <script src="scripts/windchill.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/maps.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZAm-95tyd8OuAKBcVTTSXE147XAODL4A&callback=prestonMap"></script>

@@ -39,7 +39,7 @@
     
     main {
         max-width:1024px;
-        margin:0 auto;
+        margin: 35px auto;
     }
 
     /*------ HERO ------*/
@@ -91,7 +91,38 @@
     }
     
     .picture img {
-        width: 100%;
+        width: 97%;
         padding: 2%; 
     }
+
+    /*------ GALLERY ------*/
+
+    div.weatherGallery {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 2300px;
+        margin: auto;
+    }
+
+    div.weatherGallery figure:hover {
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    /*------ FOOTER ------*/
+
+    footer {
+        max-width: 1000px;
+        margin: auto auto 20px auto;
+        padding-top: 50px;
+    }
+
+    footer aside {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+    }
+
+    div.contact {
+        padding-top: 30px;
+    }
+
 }

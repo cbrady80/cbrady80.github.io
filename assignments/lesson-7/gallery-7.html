@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Preston | Gem State Weather</title>
+        <meta name="description" content="Idaho - The Gem State - Weather">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-7.css">
+        <link rel="stylesheet" href="css/medium-7.css">
+        <link rel="stylesheet" href="css/large-7.css">
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7cLato%7cRaleway" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- HEADER -->    
+        <header>
+            <img src="images/weather_logo.png" alt="Weather Logo">
+            <section class="headings">
+                <h1>Gem State Weather</h1>
+                <div class="motto">Idaho's best source for current weather info!</div>
+            </section>
+        </header>
+
+    <!-- NAVIGATION -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav">
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-7.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li class="active"><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+    <!-- CONTENT -->    
+        <main class="clearfix">
+            <h2>Image Gallery</h2>
+            <div class="weatherGallery">
+                <figure>
+                    <img src="images/partly-cloudy-280x157.jpg" alt="Partly Cloudy">
+                    <figcaption>Partly Cloudy Sky</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rain-280x157.jpg" alt="Rainy Day">
+                    <figcaption>Rainy Day</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rainbow-280x156.jpg" alt="Rainbow">
+                    <figcaption>Beautiful Rainbow</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/snow-280x157.jpg" alt="Snowy Mountain">
+                    <figcaption>Snowy Mountain</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/thunderstorm-280x157.jpg" alt="Thunder Storm">
+                    <figcaption>Thunder Storm</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/foggy-morning-280x158.jpg" alt="Foggy Morning">
+                    <figcaption>Foggy Morning</figcaption>
+                </figure>
+            </div>
+            
+        </main>
+
+    <!-- FOOTER -->    
+        <footer>
+            <aside>
+                <div class="contact">
+                    <p><b>Gem State Weather</b></p>
+                    <p><i class="material-icons"></i> 789 Center Street <br> Preston, ID 54321</p>
+                    <p><i class="material-icons"></i> 111-222-3456</p>
+                    <p><i class="material-icons"></i> gemstate@weather.com</p>
+                    <img class="social-icons" src="images/iconfinder-facebook.png" alt="Facebook Icon">
+                    <img class="social-icons" src="images/iconfinder-pinterest.png" alt="Pinterest Icon">
+                    <img class="social-icons" src="images/iconfinder-twitter.png" alt="Twitter Icon">
+                    <img class="social-icons" src="images/iconfinder-google-plus.png" alt="Google Icon">
+                </div>
+                <div id="googleMap"></div><br>
+            </aside>
+            <p class="footer-bar">&copy;2019 | Cheryl Brady | <a href="#"> Terms of Use</a> | <span id="currentdate"></span><br></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/maps.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZAm-95tyd8OuAKBcVTTSXE147XAODL4A&callback=prestonMap"></script>
+ 
+    </body>
+</html>
