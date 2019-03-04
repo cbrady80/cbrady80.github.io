@@ -34,6 +34,28 @@
         display: inline-flex;
         margin: auto;
     }
+
+    /*------ FORECAST ------*/
+    .forecast {
+        display: block;
+        margin: 40px;
+    }
+
+    table {
+        margin: 0 auto;
+    }
+
+    th {
+        background-color: #42006b;
+        color: white;
+    }
+
+    table, th, td {
+        border: 1px solid #42006b;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 10px;
+      }
     
     /*------ GALLERY ------*/
     div.weatherGallery {
