@@ -200,7 +200,8 @@ form {
 }
 
 input {
-    width: 300px;
+    width: 80vw;
+    max-width: 400px;
     padding: 12px 20px;
     margin: 10px 0;
     border: 2px solid #ccc;
@@ -210,6 +211,8 @@ input {
 form fieldset {
     display: flex;
     justify-content: space-evenly;
+    width: 80vw;
+    max-width: 400px;
     border: none;
     margin-top: 30px;
 }
@@ -256,8 +259,6 @@ fieldset legend {
 
 /* ---ADDITIONAL INFO--- */
 textarea {
-    width: 300px;
-    height: 200px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
