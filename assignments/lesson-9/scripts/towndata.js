@@ -49,6 +49,6 @@ function showData(jsonObj) {
             myPhoto.setAttribute('class', 'homePhoto');
             myPhoto.setAttribute('alt', 'Soda Springs Photo');
 
-            section.appendChild(myArticle);
+            article.appendChild(myArticle);
         }
     }
