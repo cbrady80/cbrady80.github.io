@@ -42,63 +42,16 @@
             <section class="hero">
                     <picture>            
                     <img alt="Idaho Farm" sizes="100vw" 
-                        srcset="images/ 400w, images/franklin_800.jpg 900w"
-                        src="images/franklin_250.jpg">
+                        srcset="images/idaho-400.jpg 400w, images/idaho-800.jpg 900w"
+                        src="images/idaho-250.jpg">
                     </picture>
-                
-                <div id="summary">
-                    <h3>Weather Summary</h3>
-                    <p>Currently: <span id="currentTemp">35</span>&#8457;</p>
-                    <p>High: <span id="high">32</span>&#8457;</p>
-                    <p>Wind Chill: <span id="windChill"></span>&#8457;</p>
-                    <p>Humidity: <span id="humidity"></span>80%</p>
-                    <p>Wind Speed: <span id="windSpeed">15</span>mph</p>
-                </div>
             </section>
 
-            <section class="forecast">
-                <h2>5 Day Forecast</h2>
+    <!-- JSON TOWN DATA -->
+            <article id="homeTowns">
 
-                <table style="width:70%">
-                    <tr>
-                      <th>Monday</th>
-                      <th>Tuesday</th> 
-                      <th>Wednesday</th>
-                      <th>Thursday</th>
-                      <th>Friday</th>
-                    </tr>
-                    <tr>
-                      <td><img src="images/sunny.png" alt="Sunny" style="width:100%">36&#8457;</td>
-                      <td><img src="images/snow.png" alt="Snow" style="width:100%">25&#8457;</td> 
-                      <td><img src="images/rain.png" alt="Rain" style="width:100%">33&#8457;</td>
-                      <td><img src="images/partly_cloudy.png" alt="Partly Cloudy" style="width:100%">39&#8457;</td>
-                      <td><img src="images/thunder_storms.png" alt="Thunder Storms" style="width:100%">35&#8457;</td>
-                    </tr>
-                  </table>
-            
-            </section>
-            
-            <article>
-                <h2>Preston Recreation</h2>
-                <h5><i>By: Southeast Idaho High Country Tourism</i></h5>
-                <figure class="picture">
-                    <img src="images/Optimized-idaho-lake-275.jpg" alt="Beautiful Lake in Idaho">
-                </figure>
-                    
-                <p>Awaiting the fishermen and water-skiers who come from miles around are nine reservoirs. Peaceful 
-                    campgrounds and refreshing hikes are within an easy distance. Snowmobiling is a favorite sport in 
-                    the Bear River Range of the Wasatch Mountains and the Wellsville and Malad Ranges surrounding our 
-                    town. The local hunting opportunities include: deer, elk, moose, pheasant, duck, geese and mountain 
-                    lion. Hunting and fishing regulations and licenses are available at many of our stores.</p>
-
-                <p>Whether you are site-seeing or hunting the wildlife is abundant. Occasionally wildlife can be seen 
-                    in our backyards and fields, but mostly in the beautiful mountains and near the many waterways. 
-                    Historic sites and scenic views can also be navigated on the Pioneer Historic Byway that passes 
-                    through Preston on Highway 91.</p>
-                    
-                <p>We hope that you will get off I-15 and come visit our beautiful hometown of Preston.</p>
-                <p>Credit: <a href="https://idahohighcountry.org/preston/">idahohighcountry.org</a></p>
             </article>
+
         </main>
 
     <!-- FOOTER -->    
@@ -120,8 +73,8 @@
         </footer>
 
         <script src="scripts/hamburger.js"></script>
-        <script src="scripts/windchill.js"></script>
         <script src="scripts/currentdate.js"></script>
+        <script src="scripts/towndata.js"></script>
         <script src="scripts/maps.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZAm-95tyd8OuAKBcVTTSXE147XAODL4A&callback=prestonMap"></script>
  
