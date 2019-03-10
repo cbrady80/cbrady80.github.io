@@ -288,6 +288,44 @@ textarea {
     height: 300px;
 }
 
+/* ----- HOME PAGE ----- */
+article#homeTowns {
+    border: none;
+    text-align: center;
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    grid-gap: 3%;
+    margin-top: 30px;
+    padding: 20px 30px;
+}
+
+#homeTowns div {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+    grid-gap: 10px;
+    margin: auto;
+}
+
+#homeTowns h5 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.2rem;
+    color: #d6620a;
+}
+
+#homeTowns h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: .9rem;
+    color: #42006b;
+    margin: 10px 0 20px 0;
+}
+
+#homeTowns p {
+    font-size: .9rem;
+    margin: 0;
+    padding: 10px;
+}
+
 
 /*------ FOOTER ------*/
 
