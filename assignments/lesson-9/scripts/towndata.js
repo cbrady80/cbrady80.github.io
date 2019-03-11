@@ -13,7 +13,7 @@ function showData(jsonObj) {
         var data = jsonObj['towns'];
             
         for (var i = 0; i < data.length; i++) {
-            if (i === 0 || i === 1 || i === 4 || i === 5) {
+            if (i === 0 || i === 2 || i === 3 || i === 6) {
                 continue;
             }
             var myArticle = document.createElement('div');
