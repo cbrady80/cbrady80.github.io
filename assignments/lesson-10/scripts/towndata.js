@@ -13,7 +13,7 @@ function showData(jsonObj) {
         var data = jsonObj['towns'];
             
         for (var i = 0; i < data.length; i++) {
-            if (i === 0 || i === 2 || i === 3 || i === 6) {
+            if ((data[i].name == "Preston" || data[i].name == "Soda Springs" || data[i].name == "Fish Haven") == false) {
                 continue;
             }
             var myArticle = document.createElement('div');
@@ -36,18 +36,24 @@ function showData(jsonObj) {
             myArticle.appendChild(myPara3);
             myArticle.appendChild(myPara4);
             myArticle.appendChild(myPhoto);
-            if (i === 1)
-                myPhoto.src = 'images/home-fishhaven-200.jpg'
+            if (data[i].name == "Fish Haven") {
+                myPhoto.src = 'images/home-fishhaven-400.jpg'
             myPhoto.setAttribute('class', 'homePhoto');
             myPhoto.setAttribute('alt', 'Fish Haven Photo');
-            if (i === 4)
-                myPhoto.src = 'images/home-preston-200.jpg'
+            myArticle.style.order = "3";
+        }
+            if (data[i].name == "Preston") { 
+                myPhoto.src = 'images/home-preston-400.jpg'
             myPhoto.setAttribute('class', 'homePhoto');
             myPhoto.setAttribute('alt', 'Preston Photo');
-            if (i === 5)
-                myPhoto.src = 'images/home-sodasprings-200.jpg'
+            myArticle.style.order = "1";
+        }
+            if (data[i].name == "Soda Springs") {
+                myPhoto.src = 'images/home-sodasprings-400.jpg'
             myPhoto.setAttribute('class', 'homePhoto');
             myPhoto.setAttribute('alt', 'Soda Springs Photo');
+            myArticle.style.order = "2";
+        }
 
             article.appendChild(myArticle);
         }

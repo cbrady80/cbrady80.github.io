@@ -106,12 +106,12 @@ h2 {
 
 /*------ HERO ------*/
 .hero {
-    margin: 10px auto 100px auto;
+    margin: 10px auto 30px auto;
     position: relative;
 }
 
 .hero img {
-    max-width: 100%;
+    width: 100%;
     margin: auto;
     display: block;
 }
@@ -161,7 +161,7 @@ article h2 {
 
 article h5 {
     margin-bottom: 15px;
-    margin-top: 2px;
+    margin-top: 27px;
 }
 
 .picture {
@@ -273,6 +273,8 @@ textarea {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
+    width: 110%;
+    height: 120px;
 }
 
 /* ---SUBMIT BUTTON--- */
@@ -345,17 +347,6 @@ img.homePhoto {
     margin-bottom: 20px;
 }
 
-article#homeTowns div:nth-of-type(1) {
-    order: 3;
-}
-
-article#homeTowns div:nth-of-type(2) {
-    order: 1;
-}
-
-article#homeTowns div:nth-of-type(3) {
-    order: 2;
-}
 
 /*------ FOOTER ------*/
 
