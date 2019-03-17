@@ -48,13 +48,22 @@
     th {
         background-color: #42006b;
         color: white;
+        font-size: .9rem;
     }
 
     table, th, td {
-        border: 1px solid #42006b;
+        border: 2px solid rgb(88, 88, 88);
         border-collapse: collapse;
         text-align: center;
         padding: 10px;
+      }
+
+      .forecastImg {
+          width: 100%;
+      }
+
+      .tableTemps {
+          font-size: 1.5rem;
       }
     
     /*------ GALLERY ------*/
