@@ -173,6 +173,15 @@ article h5 {
     width: 100%;
 }
 
+#prestonEvents h2 {
+    text-align: center;
+}
+
+#prestonEvents h4 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
 /*------ GALLERY ------*/
 
 div.weatherGallery {
