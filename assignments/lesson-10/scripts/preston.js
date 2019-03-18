@@ -54,6 +54,8 @@ weatherForecast.onload = function() {
             var iconCode = forecastInfo.list[i].weather["0"].icon;
             var icon_path = "https://openweathermap.org/img/w/" + iconCode + ".png";
             listIconCode.push(icon_path);
+            
+            
         }
         continue;
     }
@@ -78,5 +80,13 @@ weatherForecast.onload = function() {
     document.getElementById('highTemp3').innerHTML = listTemp[2];
     document.getElementById('highTemp4').innerHTML = listTemp[3];
     document.getElementById('highTemp5').innerHTML = listTemp[4];
+
+    //Set src attribute
+    document.getElementById('weather_icon1').setAttribute('src', listIconCode[0]);
+    document.getElementById('weather_icon2').setAttribute('src', listIconCode[1]);
+    document.getElementById('weather_icon3').setAttribute('src', listIconCode[2]);
+    document.getElementById('weather_icon4').setAttribute('src', listIconCode[3]);
+    document.getElementById('weather_icon5').setAttribute('src', listIconCode[4]);
+
 
 }
