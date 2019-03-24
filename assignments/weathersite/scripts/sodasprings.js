@@ -1,8 +1,8 @@
-//PRESTON IDAHO 5604473
+//SODA SPRINGS IDAHO 5607916
 
 // WEATHER SUMMARY
 var weatherObject = new XMLHttpRequest
-weatherObject.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=93513a5ecb45a4d44be23c0ee39c9db3', true);
+weatherObject.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=93513a5ecb45a4d44be23c0ee39c9db3', true);
 weatherObject.send();
 weatherObject.onload = function () {
 
@@ -23,7 +23,7 @@ weatherObject.onload = function () {
 
 // FORECAST
 var weatherForecast = new XMLHttpRequest
-weatherForecast.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=93513a5ecb45a4d44be23c0ee39c9db3', true);
+weatherForecast.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=93513a5ecb45a4d44be23c0ee39c9db3', true);
 weatherForecast.send();
 weatherForecast.onload = function() {
 
@@ -91,7 +91,7 @@ weatherForecast.onload = function() {
 }
 
 //EVENT DATA
-var article = document.querySelector('#prestonEvents');
+var article = document.querySelector('#sodaSpringsEvents');
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -106,7 +106,7 @@ function showData(jsonObj) {
         var data = jsonObj['towns'];
             
         for (var i = 0; i < data.length; i++) {
-            if (data[i].name != "Preston") {
+            if (data[i].name != "Soda Springs") {
                 continue;
             }
             var myArticle = document.createElement('div');

@@ -121,18 +121,19 @@ h2 {
 div#summary {
     position: absolute;
     top: 25px;
-    right: 20px;
+    left: 40px;
+    width: 27%;
     background: radial-gradient(#eee, #4567aa);
     opacity: .8;
     border: 1px solid #000;
     padding: 5px;
     box-shadow: 0 0 30px #fff;
-    color: #632b00;
+    color: #8d3d00;
 }
 
 div#summary h3 {
     padding-bottom: 3px;
-    border-bottom: 4px solid #a14600;
+    border-bottom: 4px solid #8d3d00;
     margin: 5px;
     font-size: 1.5rem;
 }

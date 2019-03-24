@@ -1,8 +1,8 @@
-//PRESTON IDAHO 5604473
+//FISH HAVEN IDAHO 5585010
 
 // WEATHER SUMMARY
 var weatherObject = new XMLHttpRequest
-weatherObject.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=93513a5ecb45a4d44be23c0ee39c9db3', true);
+weatherObject.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&APPID=93513a5ecb45a4d44be23c0ee39c9db3', true);
 weatherObject.send();
 weatherObject.onload = function () {
 
@@ -23,7 +23,7 @@ weatherObject.onload = function () {
 
 // FORECAST
 var weatherForecast = new XMLHttpRequest
-weatherForecast.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=93513a5ecb45a4d44be23c0ee39c9db3', true);
+weatherForecast.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&APPID=93513a5ecb45a4d44be23c0ee39c9db3', true);
 weatherForecast.send();
 weatherForecast.onload = function() {
 
@@ -91,7 +91,7 @@ weatherForecast.onload = function() {
 }
 
 //EVENT DATA
-var article = document.querySelector('#prestonEvents');
+var article = document.querySelector('#fishHavenEvents');
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -106,7 +106,7 @@ function showData(jsonObj) {
         var data = jsonObj['towns'];
             
         for (var i = 0; i < data.length; i++) {
-            if (data[i].name != "Preston") {
+            if (data[i].name != "Fish Haven") {
                 continue;
             }
             var myArticle = document.createElement('div');
@@ -114,16 +114,19 @@ function showData(jsonObj) {
             var myPara1 = document.createElement('h4');
             var myPara2 = document.createElement('h4');
             var myPara3 = document.createElement('h4');
+            var myPara4 = document.createElement('h4');
             
             
             myPara1.textContent = data[i].events[0];
             myPara2.textContent = data[i].events[1];
             myPara3.textContent = data[i].events[2];
+            myPara4.textContent = data[i].events[3];
 
 
             myArticle.appendChild(myPara1);
             myArticle.appendChild(myPara2);
             myArticle.appendChild(myPara3);
+            myArticle.appendChild(myPara4);
             
             article.appendChild(myArticle);
         }
