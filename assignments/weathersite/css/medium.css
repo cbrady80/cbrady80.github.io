@@ -51,12 +51,18 @@
         font-size: .9rem;
     }
 
+    
     table, th, td {
         border: 2px solid rgb(88, 88, 88);
         border-collapse: collapse;
         text-align: center;
         padding: 10px;
       }
+
+      tr.tableTemps td {
+        border-top: none;
+    }
+
 
       .forecastImg {
           width: 100%;
@@ -84,15 +90,14 @@
     /*------ FOOTER ------*/
 
     footer {
-        max-width: 1000px;
-        margin: auto auto 20px auto;
         padding-top: 50px;
     }
 
     footer aside {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 35% 65%;
         margin: 0;
+        padding-right: 30px;
     }
 
     div.contact {
