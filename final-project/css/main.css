@@ -88,12 +88,87 @@ nav ul li.active a {background-color: rgba(0,0,0,0.2);
 /* Change the link color on hover */
 nav ul li a:hover {background-color: #42006b;}
 
+
 /*------ MAIN ------*/
 
 h2, h3, h4, h5, h6 {
     font-family: 'Great Vibes', cursive;
     color: #42006b;
 }
+
+h2 {
+    font-size: 2rem;
+}
+
+/* -----------------------HOME PAGE------------------------- */
+.intro {
+    border: none;
+    text-align: center;
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    grid-gap: 7%;
+    margin: 30px 15px 20px 15px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+}
+
+#hotel div {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+    grid-gap: 10px;
+    min-height: 400px;
+}
+
+#hotel div img {
+    width: 95%;
+    height: auto;
+}
+
+#hotel p {
+    margin: 0;
+    padding: 10px 10px 30px 10px;
+}
+
+#features ul {
+    text-align: left;
+    padding-bottom: 17px;
+}
+
+/* -----Action Links------ */
+.action {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+}
+
+/* Change link colors and underline */
+.intro a:link {
+    color:  #42006b;
+    text-decoration: none;
+}
+
+/* Add underline to link when hovering */
+.intro a:hover {
+    text-decoration: underline;
+}
+
+/* -----DC Temple article----- */
+article {
+    margin: 55px 15px 20px 15px;
+    padding-top: 100px;
+}
+
+.dcTemple {
+    width: 100%;
+    margin: 0;
+}
+
+.dcTemple img {
+    width: 100%;
+}
+
 
 
 /*------ FOOTER ------*/
@@ -104,7 +179,7 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 p.footer-bar {
@@ -113,8 +188,24 @@ p.footer-bar {
 
 footer h3 {
     color: white;
-    font-size: 1.25rem;
+    font-size: 2rem;
     padding-top: 20px;
+    margin: 10px;
+}
+
+footer h2 {
+    font-size: 1.75rem;
+}
+
+/* Change link colors and underline */
+footer a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Add underline to link when hovering */
+footer a:hover {
+    text-decoration: underline;
 }
 
 

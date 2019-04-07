@@ -1,0 +1,54 @@
+@media only screen and (min-width: 600px) {
+
+/*------ NAVIGATION -------*/
+nav button {display: none;}
+    
+nav ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+nav ul li a {
+    font-size: 1.5em;
+    border: none;
+    padding: .6rem 1rem;
+}
+
+nav ul.hide {
+    display: inline-flex;
+    margin: auto;
+}
+
+/* ----- HOME PAGE ----- */
+.intro {
+    border: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3%;
+    margin-top: 30px;
+}
+
+/*------ ARTICLE ------*/
+
+/* -----DC Temple article----- */
+article {
+    margin: 30px 15px 20px 15px;
+    padding-top: 30px;
+}
+   
+.dcTemple {
+    width: 50%;
+    margin: 0;
+    float: right;
+}
+
+.dcTemple img {
+    width: 97%;
+    padding: 2%; 
+}
+
+
+}

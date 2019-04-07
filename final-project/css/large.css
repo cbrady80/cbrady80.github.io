@@ -1,0 +1,20 @@
+@media only screen and (min-width: 900px) {
+
+/*------ HEADER ------*/
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 100px;
+}
+
+ /*------ MAIN ------*/
+    
+ main {
+    max-width:1024px;
+    margin: 35px auto;
+}
+
+}
