@@ -1,6 +1,6 @@
 @media only screen and (min-width: 600px) {
 
-/*------ NAVIGATION -------*/
+/*------------------------ NAVIGATION -----------------------*/
 nav button {display: none;}
     
 nav ul {
@@ -54,6 +54,14 @@ main aside {
     grid-template-columns: 50% 50%;
     margin: 0;
     padding: 30px;
+}
+
+.contactInfo {
+    margin: 30px;
+}
+
+div#googleMap {
+    margin: 30px;
 }
 
 
