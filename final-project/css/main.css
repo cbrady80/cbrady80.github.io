@@ -260,6 +260,12 @@ textarea {
 /* ---THANKS--- */
 #thanks {
     height: 300px;
+    text-align: center;
+}
+
+#thanks h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
 }
 
 /*------------------------------- FOOTER --------------------------------*/
