@@ -21,7 +21,7 @@ nav ul.hide {
     margin: auto;
 }
 
-/* ----- HOME PAGE ----- */
+/* -------------------------- HOME PAGE -------------------- */
 .intro {
     border: none;
     text-align: center;
@@ -30,8 +30,6 @@ nav ul.hide {
     grid-gap: 3%;
     margin-top: 30px;
 }
-
-/*------ ARTICLE ------*/
 
 /* -----DC Temple article----- */
 article {
@@ -48,6 +46,14 @@ article {
 .dcTemple img {
     width: 97%;
     padding: 2%; 
+}
+
+/* ----------------------- CONTACT PAGE ----------------------- */
+main aside {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0;
+    padding: 30px;
 }
 
 
