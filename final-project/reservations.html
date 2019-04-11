@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Temple Inn & Suites | Reservations</title>
+        <meta name="description" content="Hotels that cater to LDS Temple patrons">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Assistant|Cinzel|Great+Vibes" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- HEADER -->    
+        <header>
+            <img src="images/DCtempleLogo-white.png" alt="DC Temple Logo">
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+            </section>
+        </header>
+
+    <!-- NAVIGATION -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li class="active"><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <!-- CONTENT -->    
+        <main class="clearfix">
+            <h1>Make a Reservation</h1>
+            <p id="reqNote">All fields are required.</p>
+                <form action="thanks.html" method="get" enctype="multipart/form-data" name="contactForm" id="contactForm">
+                    <fieldset>
+                        <legend>Hotel Information</legend>
+                        <label>Location:</label>
+                            <div class="custom-select">
+                                    <select name="location" required>
+                                        <option value="0" disabled selected>--Select Location--</option>
+                                        <option value="1">Washington D.C.</option>
+                                        <option value="2">Salt Lake City, Utah</option>
+                                        <option value="3">Seattle, Washington</option>
+                                        <option value="4">San Diego, California</option>
+                                    </select>
+                            </div>
+                        <label>Date of arrival:</label>
+                            <input type="date" name="arrival" required>
+                        <label>Date of departure:</label>
+                            <input type="date" name="nights" required>
+                        <label>Number of Guests: (Maximum: 6 guests/room)</label>
+                            <input type="number" name="guests" min="1" max="6" required>
+                        <label>Room Type:</label>
+                            <div class="custom-select">
+                                    <select name="roomtype" required>
+                                        <option value="0" disabled selected>--Select Room--</option>
+                                        <option value="1">2 Queen Beds</option>
+                                        <option value="2">1 King Bed</option>
+                                        <option value="3">Suite with 1 King</option>
+                                        <option value="4">Suite with 1 King & 1 Queen</option>
+                                    </select>
+                            </div>
+                        <label>Number of Rooms:</label>
+                            <input type="number" name="numbofrooms" min="1" max="10" required>
+                        
+                    </fieldset>
+                    
+                    
+                    <fieldset>
+                        <legend>Guest Information</legend>
+                        <label>Full Name:</label>
+                            <input type="text" name="full_name" required pattern="[A-Za-z\s]{5,}">
+                        <label>Email:</label>
+                            <input type="email" name="email" required placeholder="example@email.com">
+                        <label>Phone number:</label>
+                            <input type="tel" name="phone" required placeholder="###-###-####" pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}">
+                        <label>Home State or Country:</label>
+                            <input type="text" name="state" required>
+                        <label>Special Accomodations/Comments:</label>
+                            <textarea name="comments"></textarea>
+                    </fieldset>
+    
+                    <div class="buttonHolder">
+                        <input type="submit" value="Submit" class="submitButton">
+                        <input name="redirect" type="hidden" value="thanks.html">
+                    </div>
+    
+                </form>
+                 
+        
+
+        </main>
+
+    <!-- FOOTER -->    
+        <footer>
+                <div class="contact">
+                    <h3>Temple Inn & Suites</h3>
+                    <p>4800 Montgomery Lane #300 <br> Bethesda, MD 20814</p>
+                    <p>301-222-3456</p>
+                    <p>contact@templeinnandsuites.com</p>
+                    <h2><a href="contact.html">Contact Us</a></h2>
+                    <img class="social-icons" src="images/iconfinder-facebook.png" alt="Facebook Icon">
+                    <img class="social-icons" src="images/iconfinder-instagram.png" alt="Instagram Icon">
+                    <img class="social-icons" src="images/iconfinder-twitter.png" alt="Twitter Icon">
+                    <img class="social-icons" src="images/iconfinder-pinterest.png" alt="Pinterest Icon">
+                </div>
+            <p class="footer-bar">&copy;2019 Cheryl Brady | All Rights Reserved. | <a href="attributions.html">Attributions</a> | <span id="currentdate"></span><br></p> 
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        
+    </body>
+</html>

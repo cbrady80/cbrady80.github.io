@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Temple Inn & Suites | Services</title>
+        <meta name="description" content="Hotels that cater to LDS Temple patrons">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Assistant|Cinzel|Great+Vibes" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- HEADER -->    
+        <header>
+            <img src="images/DCtempleLogo-white.png" alt="DC Temple Logo">
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+            </section>
+        </header>
+
+    <!-- NAVIGATION -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li class="active"><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <!-- CONTENT -->    
+        <main class="clearfix">
+            <h1>Services</h1>
+            <div class="servicesPics">
+                <img src="images/gym-330.jpg" alt="Hotel Gym" class="service_pics">
+                <img src="images/temple wedding-330.jpg" alt="Temple Wedding" class="service_pics">
+                <img src="images/kitchenette-330.jpg" alt="Suite with kitchenette" class="service_pics">
+            </div>
+            
+            <div id="amenities">
+                    <h2>Amenities</h2>
+                    <p>All amenities included FREE with your stay:</p>
+                    <ul>
+                        <li>Breakfast</li>
+                        <li>Exercise Facilities</li>
+                        <li>Indoor pool</li>
+                        <li>WiFi high-speed internet access and smart TV's</li>
+                        <li>Parking</li>
+                        <li>Temple shuttle</li>
+                        <li>Family history consultation and family ordinance card service</li>
+                    </ul>
+            </div>
+            
+            <div id="services">
+                <h2>Specialized Services</h2>    
+                <p>Services can be booked over the phone or at the front desk:</p>
+                    <ul>
+                        <li>Free access to changing rooms and bathroom facilities for temple patrons 
+                            who have traveled far and need to change to and from church clothes</li>
+                        <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
+                        <li>Long-term stay accommodations in kitchenette suites for full-time temple missionaries</li>
+                        <li>Temple history themed reception and sitting area</li>
+                        <li>A wedding reception hall that can be easily customized with a simple catering 
+                            menu and kitchen access for food preparation and serving</li>
+                        <li>A family search center that supports family search and ordinance work</li>
+                    </ul>
+            </div>
+                 
+            <div id="subpages">
+                <h3>Receptions</h3>
+                <p>Need a place to hold a reception? We are pleased to offer an event reception hall & services. 
+                    Click <a href="receptions.html">HERE</a> to learn more!</p>
+
+                <h3>Temple Missionaires</h3>
+                <p>Full-time temple missionaries?  We are pleased to offer long-term accomodation suites. 
+                    Click <a href="missionaries.html">HERE</a> for more information!</p>
+            </div>
+
+        </main>
+
+    <!-- FOOTER -->    
+        <footer>
+                <div class="contact">
+                    <h3>Temple Inn & Suites</h3>
+                    <p>4800 Montgomery Lane #300 <br> Bethesda, MD 20814</p>
+                    <p>301-222-3456</p>
+                    <p>contact@templeinnandsuites.com</p>
+                    <h2><a href="contact.html">Contact Us</a></h2>
+                    <img class="social-icons" src="images/iconfinder-facebook.png" alt="Facebook Icon">
+                    <img class="social-icons" src="images/iconfinder-instagram.png" alt="Instagram Icon">
+                    <img class="social-icons" src="images/iconfinder-twitter.png" alt="Twitter Icon">
+                    <img class="social-icons" src="images/iconfinder-pinterest.png" alt="Pinterest Icon">
+                </div>
+            <p class="footer-bar">&copy;2019 Cheryl Brady | All Rights Reserved. | <a href="attributions.html">Attributions</a> | <span id="currentdate"></span><br></p> 
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZAm-95tyd8OuAKBcVTTSXE147XAODL4A&callback=bethesdaMap"></script>
+ 
+    </body>
+</html>

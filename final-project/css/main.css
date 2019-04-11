@@ -82,7 +82,7 @@ nav ul li a {
 
 /*wayfinding active link */
 nav ul li.active a {background-color: rgba(0,0,0,0.2);
-    font-style: italic;
+    text-decoration: underline;
 }
 
 /* Change the link color on hover */
@@ -97,7 +97,7 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 /* -----------------------HOME PAGE------------------------- */
@@ -109,10 +109,6 @@ h2 {
     grid-row: 2;
     grid-gap: 7%;
     margin: 30px 15px 20px 15px;
-}
-
-.intro h2 {
-    font-size: 2rem;
 }
 
 #hotel div {
@@ -139,7 +135,7 @@ h2 {
 .action {
     text-align: center;
     font-family: 'Cinzel', serif;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 /* Change link colors and underline */
@@ -168,7 +164,49 @@ article {
     width: 100%;
 }
 
-/* -----------------------------CONTACT PAGE---------------------------- */
+/* ------------------------SERVICES PAGE-------------------------- */
+
+.servicesPics {
+    border: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1%;
+    margin-top: 30px;
+}
+
+.service_pics {
+    width: 100%;
+    height: auto;
+}
+
+#amenities, #services {
+    margin: 40px;
+}
+
+#subpages {
+    text-align: center;
+    margin: 40px;
+}
+
+#subpages h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+}
+
+/* Change link colors and underline */
+#subpages a:link {
+    color:  #42006b;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+/* Add underline to link when hovering */
+#subpages a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------------CONTACT & RESERVATIONS PAGES------------------------ */
 
 main h1 {
     font-family: 'Great Vibes', cursive;
@@ -176,6 +214,11 @@ main h1 {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 10px;
+}
+
+#reqNote {
+    text-align: center;
+    font-style: italic;
 }
 
 .contactInfo {
@@ -229,15 +272,21 @@ fieldset legend {
     font-weight: bold;
 }
 
+/* ---SELECT LISTS--- */
+.custom-select {
+    margin: 10px 0px;
+}
+
 /* ---COMMENTS BOX--- */
 textarea {
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
-    background-color: #f8f8f8;
+    background-color: white;
     resize: none;
     width: 100%;
     height: 120px;
+    margin: 10px 0px;
 }
 
 /* ---SUBMIT BUTTON--- */
