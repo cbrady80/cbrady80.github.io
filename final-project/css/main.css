@@ -206,6 +206,17 @@ article {
     text-decoration: underline;
 }
 
+/* -------- RECEPTIONS -------- */
+.reception {
+    margin: 40px;
+}
+
+.reception h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
 /* -------------------------CONTACT & RESERVATIONS PAGES------------------------ */
 
 main h1 {
@@ -354,6 +365,10 @@ footer a:link {
 /* Add underline to link when hovering */
 footer a:hover {
     text-decoration: underline;
+}
+
+footer a:visited {
+    color: white;
 }
 
 
