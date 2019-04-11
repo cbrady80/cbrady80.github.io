@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Temple Inn & Suites | Temples</title>
+        <meta name="description" content="Hotels that cater to LDS Temple patrons">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Assistant|Cinzel|Great+Vibes" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- HEADER -->    
+        <header>
+            <img src="images/DCtempleLogo-white.png" alt="DC Temple Logo">
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+            </section>
+        </header>
+
+    <!-- NAVIGATION -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <!-- CONTENT -->    
+        <main class="clearfix">
+        <section class="temples">
+            <h1>Temples</h1>
+            <h3>The Temple Inn & Suites currently have 4 locations near the following temples:</h3>
+            <p><img src="images/washington_dc_temple-300.jpg" alt="Washington DC Temple">
+                <a href="dctemple.html"></a>Washington D.C.</p>
+            <p><img src="images/salt_lake_temple-300.jpg" alt="Salt Lake City Temple">
+                <a href="slctemple.html">Salt Lake City, Utah</a></p>
+            <p><img src="images/seattle-temple-300.jpg" alt="Seattle Temple">
+                <a href="seatemple.html">Seattle, Washington</a></p>
+            <p><img src="images/san_diego_california_temple-300.jpg" alt="San Diego Temple">
+                <a href="sdtemple.html">San Diego, California</a></p>
+            <h3>Click on the temple location to get local and temple specific information.</h3>
+            
+        </section>
+        </main>
+
+    <!-- FOOTER -->    
+        <footer>
+                <div class="contact">
+                    <h3>Temple Inn & Suites</h3>
+                    <p>4800 Montgomery Lane #300 <br> Bethesda, MD 20814</p>
+                    <p>301-222-3456</p>
+                    <p>contact@templeinnandsuites.com</p>
+                    <h2><a href="contact.html">Contact Us</a></h2>
+                    <img class="social-icons" src="images/iconfinder-facebook.png" alt="Facebook Icon">
+                    <img class="social-icons" src="images/iconfinder-instagram.png" alt="Instagram Icon">
+                    <img class="social-icons" src="images/iconfinder-twitter.png" alt="Twitter Icon">
+                    <img class="social-icons" src="images/iconfinder-pinterest.png" alt="Pinterest Icon">
+                </div>
+            <p class="footer-bar">&copy;2019 Cheryl Brady | All Rights Reserved. | <a href="attributions.html">Attributions</a> | <span id="currentdate"></span><br></p> 
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZAm-95tyd8OuAKBcVTTSXE147XAODL4A&callback=bethesdaMap"></script>
+ 
+    </body>
+</html>
