@@ -10,14 +10,14 @@ header img {
     max-width: 100px;
 }
 
- /*------------------------- MAIN ----------------------------*/
+ /*------------------------- MAIN -------------------------*/
     
  main {
     max-width:1024px;
     margin: 35px auto;
 }
 
-/* ----------------------- CONTACT PAGE ----------------------- */
+/* --------------------- CONTACT PAGE -------------------- */
 main aside {
     display: grid;
     grid-template-columns: 50% 50%;

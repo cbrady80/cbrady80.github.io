@@ -36,45 +36,66 @@
 
     <!-- CONTENT -->    
         <main class="clearfix">
-        <section class="templesInfo">
+        
+        <article class="templeInfo">
             <h1>Salt Lake City, Utah Temple</h1>
-                <img src="images/salt_lake_temple-300.jpg" alt="Salt Lake City Temple">
+            <figure class="templePicture">    
+                <img src="images/salt_lake_temple-300.jpg" alt="Salt Lake City Temple" sizes="50vw" 
+                srcset="images/salt_lake_temple-300.jpg 400w, images/salt_lake_temple-600.jpg 700w">
+            </figure>
             
             <h3>Address</h3>
-                <p>50 W North Temple St</p>
-                <p>Salt Lake City, UT 84150-9709</p>
+                <p>50 W North Temple St<br>
+                    Salt Lake City, UT 84150-9709</p>
 
             <h3>Telephone</h3>
                 <p>(1) 801-240-2640</p>
 
+            <div id="weather">
+                <h3>Salt Lake City Current Weather</h3>
+                <p>Currently: <span id="currentTemp"></span>&#8457;</p>
+                <p>High: <span id="high"></span>&#8457;</p>
+                <p>Wind Chill: <span id="windChill"></span>&#8457;</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windSpeed"></span>mph</p>
+            </div>
+        </article>
+
+        <section class="templeServices">    
             <h3>Services</h3>
                 <p>Clothing rental available</p>
                 <p>Cafeteria available</p>
                 <p>No patron housing available</p>
                 <p>Distribution center nearby</p>
 
-            <h3>History</h3>
-                <p>Announcement:  28 July 1847<br>
-                Site Dedication:  14 February 1853 by Heber C. Kimball<br>
-                Groundbreaking:  14 February 1853 by Brigham Young<br>
-                Public Open House:  5 April 1893<br>
-                Dedication:  6–24 April 1893 by Wilford Woodruff<br>
-                </p>
             
             <h3>Ordinance Schedules</h3>
-                <p>To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 801-240-2640 </p>
-                <p>Endowment Sessions: Every hour, on the hour beginning at 6:00 AM with the last session at 7:00 PM.<br>
-                No appointment is necessary. Appointments may be scheduled at 9:00 AM, 1:00 PM, and 6:00 PM.</p>
-                <p>Sealings:  7:00 AM - 8:00 PM Walk-ins and appointments</p>
-                <p>Baptisms:  5:00 AM - 5:00 PM & 6:00 PM - 7:00 PM Walk-ins and appointments</p>
-                <p>Initiatories:  6:00 AM - 8:00 PM Walk-ins only</p>    
+                <p><i>To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 801-240-2640</i></p>
+                <p><b>Endowment Sessions:</b><br>
+                    Every hour, on the hour beginning at 6:00 AM with the last session at 7:00 PM.<br>
+                    No appointment is necessary. Appointments may be scheduled at 9:00 AM, 1:00 PM, and 6:00 PM.</p>
+                <p><b>Sealings:</b><br>
+                    7:00 AM - 8:00 PM Walk-ins and appointments</p>
+                <p><b>Baptisms:</b><br>
+                    5:00 AM - 5:00 PM & 6:00 PM - 7:00 PM Walk-ins and appointments</p>
+                <p><b>Initiatories:</b><br>
+                    6:00 AM - 8:00 PM Walk-ins only</p>    
            
-            <h3>Temple Closures</h3>
+            
             <!-- JSON DATA -->
             <article id="templeClosures">
-                
+                <h3>Temple Closures</h3>
             </article>       
-            
+        </section>
+
+        <section class="templeFacts">
+            <h3>History</h3>
+                <p><b>Announcement:</b>  28 July 1847</p>
+                <p><b>Site Dedication:</b>  14 February 1853 by Heber C. Kimball</p>
+                <p><b>Groundbreaking:</b>  14 February 1853 by Brigham Young</p>
+                <p><b>Public Open House:</b>  5 April 1893</p>
+                <p><b>Dedication:</b>  6–24 April 1893 by Wilford Woodruff</p>
+               
             <h3>Temple Facts</h3>
                 <ul>
                     <li>The Salt Lake Temple was the fourth temple built in Utah (though its construction was started first) and the first built in the Salt Lake Valley.</li>
@@ -97,17 +118,8 @@
                     <li>The Salt Lake Temple was dedicated on April 6, 1893—three years before Utah became a state in 1896.</li>
                 </ul>   
   
-                <div id="weather">
-                    <h3>Salt Lake City Current Weather</h3>
-                    <p>Currently: <span id="currentTemp"></span>&#8457;</p>
-                    <p>High: <span id="high"></span>&#8457;</p>
-                    <p>Wind Chill: <span id="windChill"></span>&#8457;</p>
-                    <p>Humidity: <span id="humidity"></span>%</p>
-                    <p>Wind Speed: <span id="windSpeed"></span>mph</p>
-                </div>
-
-            
-        </section>
+        </section>  
+        
         </main>
 
     <!-- FOOTER -->    
@@ -128,6 +140,7 @@
 
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/slweather.js"></script>
+        <script src="scripts/sldata.js"></script>
         <script src="scripts/currentdate.js"></script>
  
     </body>

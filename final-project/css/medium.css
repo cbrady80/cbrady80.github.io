@@ -32,7 +32,7 @@ nav ul.hide {
 }
 
 /* -----DC Temple article----- */
-article {
+article.featured {
     margin: 30px 15px 20px 15px;
     padding-top: 30px;
 }
@@ -56,6 +56,30 @@ article {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3%;
     margin-top: 30px;
+}
+
+/* -------- SALT LAKE TEMPLE --------- */
+.templeInfo {
+    margin: 30px 15px 20px 15px;
+}
+
+.templeInfo h1 {
+    margin: 0px 10px 50px 10px;
+}
+
+.templeInfo h3, .templeServices h3, .templeFacts h3 {
+    margin: 25px 5px 5px 5px;
+}
+   
+.templePicture {
+    width: 50%;
+    margin: 0;
+    float: right;
+}
+
+.templePicture img {
+    width: 97%;
+    padding: 2%; 
 }
 
 
