@@ -164,7 +164,31 @@ article {
     width: 100%;
 }
 
-/* ------------------------SERVICES PAGE-------------------------- */
+/* --------------------------- TEMPLES PAGES ---------------------------- */
+
+.temples {
+    text-align: center;
+    margin: 40px;
+}
+
+.temples h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+}
+
+/* Change link colors and underline */
+.temples a:link {
+    color:  #42006b;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+/* Add underline to link when hovering */
+.temples a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------SERVICES, RECEPTION & MISSIONARIES PAGES----------------- */
 
 .servicesPics {
     border: none;
@@ -206,7 +230,7 @@ article {
     text-decoration: underline;
 }
 
-/* -------- RECEPTIONS -------- */
+/* -------- RECEPTIONS & MISSIONARIES -------- */
 .reception {
     margin: 40px;
 }

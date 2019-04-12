@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Temple Inn & Suites | Salt Lake City, Utah LDS Temple</title>
+        <meta name="description" content="Hotels that cater to LDS Temple patrons">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Assistant|Cinzel|Great+Vibes" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- HEADER -->    
+        <header>
+            <img src="images/DCtempleLogo-white.png" alt="DC Temple Logo">
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+            </section>
+        </header>
+
+    <!-- NAVIGATION -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <!-- CONTENT -->    
+        <main class="clearfix">
+        <section class="templesInfo">
+            <h1>Salt Lake City, Utah Temple</h1>
+                <img src="images/salt_lake_temple-300.jpg" alt="Salt Lake City Temple">
+            
+            <h3>Address</h3>
+                <p>50 W North Temple St</p>
+                <p>Salt Lake City, UT 84150-9709</p>
+
+            <h3>Telephone</h3>
+                <p>(1) 801-240-2640</p>
+
+            <h3>Services</h3>
+                <p>Clothing rental available</p>
+                <p>Cafeteria available</p>
+                <p>No patron housing available</p>
+                <p>Distribution center nearby</p>
+
+            <h3>History</h3>
+                <p>Announcement:  28 July 1847<br>
+                Site Dedication:  14 February 1853 by Heber C. Kimball<br>
+                Groundbreaking:  14 February 1853 by Brigham Young<br>
+                Public Open House:  5 April 1893<br>
+                Dedication:  6–24 April 1893 by Wilford Woodruff<br>
+                </p>
+            
+            <h3>Ordinance Schedules</h3>
+                <p>To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 801-240-2640 </p>
+                <p>Endowment Sessions: Every hour, on the hour beginning at 6:00 AM with the last session at 7:00 PM.<br>
+                No appointment is necessary. Appointments may be scheduled at 9:00 AM, 1:00 PM, and 6:00 PM.</p>
+                <p>Sealings:  7:00 AM - 8:00 PM Walk-ins and appointments</p>
+                <p>Baptisms:  5:00 AM - 5:00 PM & 6:00 PM - 7:00 PM Walk-ins and appointments</p>
+                <p>Initiatories:  6:00 AM - 8:00 PM Walk-ins only</p>    
+           
+            <h3>Temple Closures</h3>
+            <!-- JSON DATA -->
+            <article id="templeClosures">
+                
+            </article>       
+            
+            <h3>Temple Facts</h3>
+                <ul>
+                    <li>The Salt Lake Temple was the fourth temple built in Utah (though its construction was started first) and the first built in the Salt Lake Valley.</li>
+                    <li>The Salt Lake Temple was the only temple dedicated by President Wilford Woodruff.</li>
+                    <li>With its distinctive spires and statue of the angel Moroni, the Salt Lake Temple is an international symbol of the Church.</li>
+                    <li>The Salt Lake Temple is the largest temple (most square footage) of the Church.</li>
+                    <li>Original plans for the Salt Lake Temple called for two angel Moroni statues—one on the east central spire and one on the west.</li>
+                    <li>The Salt Lake Temple took 40 years to build with its highly ornate interior being completed in just a year. (View the story of the building of the Salt Lake Temple.)</li>
+                    <li>During the construction of the Salt Lake Temple, the St. George Utah Temple, Logan Utah Temple, and Manti Utah Temple were all started and completed.</li>
+                    <li>The walls of the Salt Lake Temple are nine feet thick at the base and six feet thick at the top.</li> 
+                    <li>The Salt Lake Temple is the first temple to feature a standing angel Moroni statue, which is 14-feet tall and attached to a rod that extends 27 feet into the tower, 
+                        terminating with a 4,000-pound counterbalance to keep the statue immovable. The angel was created by Paris-trained sculptor Cyrus E. Dallin and built in Salem, Ohio.</li>
+                    <li>The Salt Lake Temple features beautiful hand-painted murals on the walls of its progressive-style ordinance rooms: Creation Room, Garden Room, World Room, 
+                        Terrestrial Room (no murals), and Celestial Room (no murals).</li>
+                    <li>The Salt Lake Temple is one of only seven temples where patrons progress through four ordinance rooms before passing into the Celestial Room. (The other six temples 
+                        are the Manti Utah Temple, the Laie Hawaii Temple, the Cardston Alberta Temple, the Idaho Falls Idaho Temple, the Los Angeles California Temple, and the Nauvoo Illinois Temple.)</li>
+                    <li>The Salt Lake Temple is one of two temples that still employ live acting for presentation of the endowment. (The other is the Manti Utah Temple.)</li>
+                    <li>The Salt Lake Temple was completed the afternoon before the dedication. That evening, invited non-Mormon government officials, businessmen and their wives were 
+                        given a complete tour of the temple. It was the first time that a temple had been opened to the public prior to its dedication.</li>
+                    <li>The Salt Lake Temple was dedicated on April 6, 1893—three years before Utah became a state in 1896.</li>
+                </ul>   
+  
+                <div id="weather">
+                    <h3>Salt Lake City Current Weather</h3>
+                    <p>Currently: <span id="currentTemp"></span>&#8457;</p>
+                    <p>High: <span id="high"></span>&#8457;</p>
+                    <p>Wind Chill: <span id="windChill"></span>&#8457;</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind Speed: <span id="windSpeed"></span>mph</p>
+                </div>
+
+            
+        </section>
+        </main>
+
+    <!-- FOOTER -->    
+        <footer>
+                <div class="contact">
+                    <h3>Temple Inn & Suites</h3>
+                    <p>4800 Montgomery Lane #300 <br> Bethesda, MD 20814</p>
+                    <p>301-222-3456</p>
+                    <p>contact@templeinnandsuites.com</p>
+                    <h2><a href="contact.html">Contact Us</a></h2>
+                    <img class="social-icons" src="images/iconfinder-facebook.png" alt="Facebook Icon">
+                    <img class="social-icons" src="images/iconfinder-instagram.png" alt="Instagram Icon">
+                    <img class="social-icons" src="images/iconfinder-twitter.png" alt="Twitter Icon">
+                    <img class="social-icons" src="images/iconfinder-pinterest.png" alt="Pinterest Icon">
+                </div>
+            <p class="footer-bar">&copy;2019 Cheryl Brady | All Rights Reserved. | <a href="attributions.html">Attributions</a> | <span id="currentdate"></span><br></p> 
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/slweather.js"></script>
+        <script src="scripts/currentdate.js"></script>
+ 
+    </body>
+</html>

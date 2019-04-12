@@ -48,6 +48,17 @@ article {
     padding: 2%; 
 }
 
+/* ----------------------- TEMPLES PAGE ---------------------- */
+#templePics {
+    border: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3%;
+    margin-top: 30px;
+}
+
+
 /* ----------------------- CONTACT PAGE ----------------------- */
 main aside {
     display: grid;
