@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Temple Inn & Suites | San Diego, California LDS Temple</title>
+        <meta name="description" content="Hotels that cater to LDS Temple patrons">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Assistant|Cinzel|Great+Vibes" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- HEADER -->    
+        <header>
+            <img src="images/DCtempleLogo-white.png" alt="DC Temple Logo">
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+            </section>
+        </header>
+
+    <!-- NAVIGATION -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <!-- CONTENT -->    
+        <main class="clearfix">
+        
+        <article class="templeInfo">
+            <h1>San Diego, California Temple</h1>
+            <figure class="sdtemplePicture">    
+                <img src="images/san_diego_california_temple-300.jpg" alt="San Diego Temple" sizes="50vw" 
+                srcset="images/san_diego_california_temple-300.jpg 400w, images/san_diego_california_temple-600.jpg 700w, 
+                images/san_diego_california_temple-800.jpg 900w">
+            </figure>
+            
+            <h3>Address</h3>
+                <p>7474 Charmant Drive<br>
+                    San Diego, California  92122-5000</p>
+
+            <h3>Telephone</h3>
+                <p>(1) 858-622-0991</p>
+
+            <div id="weather">
+                <h3>San Diego Current Weather</h3>
+                <p>Currently: <span id="currentTemp"></span>&#8457;</p>
+                <p>High: <span id="high"></span>&#8457;</p>
+                <p>Wind Chill: <span id="windChill"></span>&#8457;</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windSpeed"></span>mph</p>
+            </div>
+        </article>
+
+        <section class="templeServices">    
+            <h3>Services</h3>
+                <p>Clothing rental available</p>
+                <p>Cafeteria available</p>
+                <p>No patron housing available</p>
+                <p>Distribution center nearby</p>
+
+            
+            <h3>Ordinance Schedules</h3>
+                <p><i>To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 801-240-2640</i></p>
+                <p><i>The temple is closed on Sunday & Monday.</i></p>
+                <p><b>Endowment Sessions:</b><br>
+                    Tuesday -<br>
+                    <ul>
+                        <li>5:30 AM - Walk-ins Only</li>
+                        <li>Every hour, on the hour beginning at 8:00 AM - 7:00 PM</li>
+                        <li>9:30 AM, 6:30 PM & 7:30 PM</li>
+                        <li>No appointment is necessary.</li>
+                    </ul>
+                    Wednesday - Friday<br>
+                    <ul>
+                        <li>Every hour, on the hour beginning at 8:00 AM - 7:00 PM</li>
+                        <li>9:30 AM, 6:30 PM & 7:30 PM</li>
+                        <li>No appointment is necessary.</li>
+                    </ul>
+                    Saturday -<br>
+                    <ul>
+                        <li>7:30 AM - Walk-ins Only</li>
+                        <li>8:00 AM</li>
+                        <li>8:30 AM</li>
+                        <li>9:00 AM - Spanish</li>
+                        <li>9:30 AM</li>
+                        <li>10:30 AM</li>
+                        <li>11:00 AM</li>
+                        <li>11:30 AM - Spanish</li>
+                        <li>12:30 PM</li>
+                        <li>1:00 PM</li>
+                        <li>2:00 PM</li>
+                        <li>3:00 PM</li>
+                        <li>4:00 PM</li>
+                        <li>5:00 PM</li>
+                        <li>6:00 PM</li>
+                        <li>6:30 PM</li>
+                        <li>7:00 PM</li>
+                        <li>No appointment is necessary.</li>
+                    </ul>
+                <p><b>Sealings:</b><br>
+                    Tuesday - Thursday - 8:00 AM - 8:30 PM Walk-ins and appointments<br>
+                    Friday - 8:00 AM - 9:00 PM Walk-ins and appointments
+                    Saturday - 7:30 AM - 8:00 PM Walk-ins and appointments</p>
+                <p><b>Baptisms:</b><br>
+                    Tuesday - Thursday<br>
+                    <ul>
+                        <li>8:00 AM - 5:00 PM Walk-ins and appointments</li>
+                        <li>5:00 PM - 8:00 PM Church Groups - Appointments Only</li>
+                    </ul>
+                    Friday<br>
+                    <ul>
+                        <li>8:00 AM - 5:00 PM Walk-ins and appointments</li>
+                        <li>5:00 PM - 8:00 PM Family Priority Time - Walk-ins and appointments</li>
+                    </ul>
+                    Saturday<br>
+                    <ul>
+                        <li>7:00 AM - 3:00 PM Appointments Only</li>
+                        <li>3:00 PM - 7:30 PM Family Priority Time - Walk-ins and appointments</li>
+                    </ul>
+                </p>
+                <p><b>Initiatories:</b><br>
+                    Tuesday - Friday - 8:00 AM - 8:30 PM Walk-ins and appointments<br>
+                    Saturday - 8:00 AM - 8:00 PM Walk-ins and appointments
+                </p>    
+           
+            
+            <!-- JSON DATA -->
+            <article id="templeClosures">
+                <h3>Temple Closures</h3>
+            </article>       
+        </section>
+
+        <section class="templeFacts">
+            <h3>History</h3>
+                <p><b>Announcement:</b>  7 April 1984</p>
+                <p><b>Groundbreaking & Site Dedication:</b>  27 February 1988 by Ezra Taft Benson</p>
+                <p><b>Public Open House:</b>  20 February–3 April 1993</p>
+                <p><b>Dedication:</b>  25–30 April 1993 by Gordon B. Hinckley</p>
+               
+            <h3>Temple Facts</h3>
+                <ul>
+                    <li>The San Diego California Temple was the third temple built in California, following the Los Angeles California Temple 
+                        (1956) and the Oakland California Temple (1964).</li>
+                    <li>The architects for the San Diego California Temple were William S. Lewis, Jr., design architect; Dennis Hyndman, 
+                        project architect; and Shelly Hyndman, interior design architect. The Hyndmans, who are Roman Catholic, had not toured 
+                        the interior of a Latter-day Saint temple until the Las Vegas Nevada Temple open house commenced in 1989.</li>
+                    <li>After suffering a mild heart attack four months earlier, President Ezra Taft Benson made his first trip outside the 
+                        Salt Lake Valley to break ground for the San Diego California Temple—his first time presiding over a temple groundbreaking.</li>
+                    <li>On Monday, December 23, 1991, the 186th anniversary of the birth of the Prophet Joseph Smith, a gilded statue of the 
+                        angel Moroni was installed atop the eastern spire of the San Diego California Temple. Shortly after the setting, a traveling 
+                        flock of seagulls—a bird of symbolic significance to the Church—circled the new statue about three times before continuing 
+                        on its course.</li>
+                    <li>Over 720,000 visitors attended the widely publicized open house of the San Diego California Temple.</li>
+                    <li>President Benson's ailing health did not allow him to preside at the dedication of the San Diego California Temple. 
+                        President Gordon B. Hinckley was assigned to dedicate the temple in 23 sessions where 49,273 persons attended.</li>
+                    <li>The San Diego California Temple was honored as Headliner of the Year for 1993 in the landmark category by the 
+                        San Diego Press Club.</li>
+                    <li>For its efforts during the open house of the San Diego California Temple to increase public awareness of the Church and 
+                        the role of the temple, the Church was presented with the Public Relations Society of America's prestigious Silver Anvil 
+                        Award in the category of special events and observances by non-profit organizations.</li>
+                </ul>   
+  
+        </section>  
+        
+        </main>
+
+    <!-- FOOTER -->    
+        <footer>
+                <div class="contact">
+                    <h3>Temple Inn & Suites</h3>
+                    <p>4800 Montgomery Lane #300 <br> Bethesda, MD 20814</p>
+                    <p>301-222-3456</p>
+                    <p>contact@templeinnandsuites.com</p>
+                    <h2><a href="contact.html">Contact Us</a></h2>
+                    <img class="social-icons" src="images/iconfinder-facebook.png" alt="Facebook Icon">
+                    <img class="social-icons" src="images/iconfinder-instagram.png" alt="Instagram Icon">
+                    <img class="social-icons" src="images/iconfinder-twitter.png" alt="Twitter Icon">
+                    <img class="social-icons" src="images/iconfinder-pinterest.png" alt="Pinterest Icon">
+                </div>
+            <p class="footer-bar">&copy;2019 Cheryl Brady | All Rights Reserved. | <a href="attributions.html">Attributions</a> | <span id="currentdate"></span><br></p> 
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/sdweather.js"></script>
+        <script src="scripts/sddata.js"></script>
+        <script src="scripts/currentdate.js"></script>
+ 
+    </body>
+</html>

@@ -188,7 +188,7 @@ article.featured {
     text-decoration: underline;
 }
 
-/* ---------- SALT LAKE TEMPLE ---------- */
+/* ---------- INDIVIDUAL TEMPLES ---------- */
 
 .templeInfo h3, .templeServices h3, .templeFacts h3 {
     font-family: 'Cinzel', serif;
@@ -205,12 +205,12 @@ article.featured {
     margin: 2px 5px 20px 5px;
 }
 
-.templePicture {
+.templePicture, .sdtemplePicture {
     width: 100%;
     margin: 0px 0px 30px 0px;
 }
 
-.templePicture img {
+.templePicture, .sdtemplePicture img {
     width: 100%;
 }
 

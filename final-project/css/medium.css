@@ -72,15 +72,23 @@ article.featured {
 }
    
 .templePicture {
-    width: 50%;
+    width: 53%;
     margin: 0;
     float: right;
 }
 
-.templePicture img {
+.sdtemplePicture {
+    width: 67%;
+    margin: 0;
+    float: right;
+}
+
+.templePicture img, .sdtemplePicture img {
     width: 97%;
     padding: 2%; 
 }
+
+
 
 
 /* ----------------------- CONTACT PAGE ----------------------- */

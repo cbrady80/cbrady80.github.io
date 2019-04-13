@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Temple Inn & Suites | Seattle, Washington LDS Temple</title>
+        <meta name="description" content="Hotels that cater to LDS Temple patrons">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Assistant|Cinzel|Great+Vibes" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- HEADER -->    
+        <header>
+            <img src="images/DCtempleLogo-white.png" alt="DC Temple Logo">
+            <section class="headings">
+                <h1>Temple Inn & Suites</h1>
+            </section>
+        </header>
+
+    <!-- NAVIGATION -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <!-- CONTENT -->    
+        <main class="clearfix">
+        
+        <article class="templeInfo">
+            <h1>Seattle, Washington Temple</h1>
+            <figure class="templePicture">    
+                <img src="images/seattle-temple-300.jpg" alt="Seattle Temple" sizes="50vw" 
+                srcset="images/seattle-temple-300.jpg 400w, images/seattle-temple-600.jpg 700w">
+            </figure>
+            
+            <h3>Address</h3>
+                <p>2808 148th Avenue SE<br>
+                    Bellevue, Washington  98007-6453</p>
+
+            <h3>Telephone</h3>
+                <p>(1) 425-643-5144</p>
+
+            <div id="weather">
+                <h3>Seattle Current Weather</h3>
+                <p>Currently: <span id="currentTemp"></span>&#8457;</p>
+                <p>High: <span id="high"></span>&#8457;</p>
+                <p>Wind Chill: <span id="windChill"></span>&#8457;</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windSpeed"></span>mph</p>
+            </div>
+        </article>
+
+        <section class="templeServices">    
+            <h3>Services</h3>
+                <p>Clothing rental available</p>
+                <p>Cafeteria available</p>
+                <p>No patron housing available</p>
+                <p>Distribution center nearby</p>
+
+            
+            <h3>Ordinance Schedules</h3>
+            <p><i>To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 801-240-2640</i></p>
+            <p><i>The temple is closed on Sunday & Monday.</i></p>
+            <p><b>Endowment Sessions:</b><br>
+                    Tuesday -<br>
+                    <ul>
+                        <li>5:30 & 6:30 AM</li>
+                        <li>Every hour, on the hour beginning at 8:00 AM - 7:00 PM</li>
+                        <li>6:30 PM & 7:30 PM</li>
+                        <li>No appointment is necessary.</li>
+                    </ul>
+                    Wednesday -<br>
+                    <ul>
+                        <li>5:30 AM</li>
+                        <li>Every hour, on the hour beginning at 8:00 AM - 7:00 PM</li>
+                        <li>6:30 PM & 7:30 PM</li>
+                        <li>No appointment is necessary.</li>
+                    </ul>
+                    Thursday & Friday-<br>
+                    <ul>
+                        <li>Every hour, on the hour beginning at 8:00 AM - 7:00 PM</li>
+                        <li>6:30 PM & 7:30 PM</li>
+                        <li>No appointment is necessary.</li>
+                    </ul>
+                    Saturday -<br>
+                    <ul>
+                        <li>6:00 AM</li>
+                        <li>6:30 AM - Tongan</li>
+                        <li>7:00 AM</li>
+                        <li>8:00 AM</li>
+                        <li>8:30 AM</li>
+                        <li>9:00 AM</li>
+                        <li>10:00 AM</li>
+                        <li>10:30 AM - Spanish</li>
+                        <li>11:00 AM</li>
+                        <li>11:30 AM</li>
+                        <li>12:30 PM</li>
+                        <li>1:00 PM</li>
+                        <li>1:30 PM</li>
+                        <li>2:00 PM</li>
+                        <li>3:00 PM - ASL</li>
+                        <li>4:00 PM</li>
+                        <li>4:30 PM - Korean</li>
+                        <li>5:00 PM</li>
+                        <li>6:00 PM</li>
+                        <li>6:30 PM</li>
+                        <li>7:00 PM</li>
+                        <li>7:30 PM</li>
+                    </ul>
+        
+            </p>
+            <p><b>Sealings:</b><br>
+                Tuesday - Friday - 9:00 AM - 8:00 PM Walk-ins and appointments<br>
+                Saturday - 6:00 AM - 8:00 PM Walk-ins and appointments
+            </p>
+            <p><b>Baptisms:</b><br>
+                Tuesday - Thursday<br>
+                <ul>
+                    <li>7:00 AM - 5:00 PM Walk-ins and appointments - English</li>
+                    <li>5:00 PM - 8:30 PM Church Groups - Appointments Only - English</li>
+                </ul>
+                Friday<br>
+                <ul>
+                    <li>7:00 AM - 6:00 PM Walk-ins and appointments - English</li>
+                    <li>6:00 PM - 8:30 PM Family Priority Time - Walk-ins and appointments - English</li>
+                </ul>
+                Saturday<br>
+                <ul>
+                    <li>6:30 AM - 10:00 AM Church Groups - Appointments Only - English</li>
+                    <li>10:00 AM - 4:00 PM Family Priority Time - Walk-ins and appointments - English</li>
+                    <li>4:00 PM - 8:30 PM Church Groups - Appointments Only - English</li>
+                </ul>
+            </p>
+            <p><b>Initiatories:</b><br>
+                Tuesday - Friday - 7:00 AM - 8:30 PM Walk-ins and appointments<br>
+                Saturday - 6:00 AM - 8:30 PM Walk-ins and appointments
+            </p> 
+           
+            
+            <!-- JSON DATA -->
+            <article id="templeClosures">
+                <h3>Temple Closures</h3>
+            </article>       
+        </section>
+
+        <section class="templeFacts">
+            <h3>History</h3>
+                <p><b>Announcement:</b>  15 November 1975</p>
+                <p><b>Groundbreaking & Site Dedication:</b>  27 May 1978 by Marion G. Romney</p>
+                <p><b>Public Open House:</b>  7 October–8 November 1980</p>
+                <p><b>Dedication:</b>  17–21 November 1980 by Spencer W. Kimball</p>
+               
+            <h3>Temple Facts</h3>
+                <ul>
+                    <li>The Seattle Washington Temple was the first temple built in the Pacific Northwest (and in the state of Washington).</li>
+                    <li>The Seattle Washington Temple was originally named the Seattle Temple.</li>
+                    <li>The Seattle Washington Temple is one of five temples featuring an angel Moroni statue holding the gold plates. 
+                        (The other four temples are the Los Angeles California Temple, Washington D.C. Temple, Jordan River Utah Temple, 
+                        and México City México Temple.) It is also one of few temples to have a west-facing Moroni.</li>
+                    <li>Because the Seattle Washington Temple would be situated near the Bellevue Airfield, the proposed height of the spire 
+                        was reduced, and a red strobe warning light was installed at the base of the angel Moroni statue. When the airfield 
+                        closed in 1983, the light was permanently shut off and later removed.</li>
+                    <li>The construction of the Seattle Washington Temple was opposed by various anti-Mormon groups. During the temple 
+                        dedication, one group of women even chained themselves to the front gates as a demonstration of their opposition to 
+                        the Church's position on the Equal Rights Amendment.</li>
+                    <li>The Seattle Washington Temple was the last temple dedicated by President Spencer W. Kimball, whose ailing health 
+                        prompted him to call Elder Gordon B. Hinckley as a third counselor in the First Presidency in July 1981. Seventeen 
+                        more temples would be dedicated under Pres. Kimball's presidency before his death in November 1985.</li>
+                </ul>   
+        </section>  
+        
+        </main>
+
+    <!-- FOOTER -->    
+        <footer>
+                <div class="contact">
+                    <h3>Temple Inn & Suites</h3>
+                    <p>4800 Montgomery Lane #300 <br> Bethesda, MD 20814</p>
+                    <p>301-222-3456</p>
+                    <p>contact@templeinnandsuites.com</p>
+                    <h2><a href="contact.html">Contact Us</a></h2>
+                    <img class="social-icons" src="images/iconfinder-facebook.png" alt="Facebook Icon">
+                    <img class="social-icons" src="images/iconfinder-instagram.png" alt="Instagram Icon">
+                    <img class="social-icons" src="images/iconfinder-twitter.png" alt="Twitter Icon">
+                    <img class="social-icons" src="images/iconfinder-pinterest.png" alt="Pinterest Icon">
+                </div>
+            <p class="footer-bar">&copy;2019 Cheryl Brady | All Rights Reserved. | <a href="attributions.html">Attributions</a> | <span id="currentdate"></span><br></p> 
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/seaweather.js"></script>
+        <script src="scripts/seadata.js"></script>
+        <script src="scripts/currentdate.js"></script>
+ 
+    </body>
+</html>
