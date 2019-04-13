@@ -207,11 +207,7 @@ article.featured {
 
 .templePicture, .sdtemplePicture {
     width: 100%;
-    margin: 0px 0px 30px 0px;
-}
-
-.templePicture, .sdtemplePicture img {
-    width: 100%;
+    margin: 20px 0px 30px 10px;
 }
 
 
